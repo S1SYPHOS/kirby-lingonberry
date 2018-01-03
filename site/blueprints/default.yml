@@ -1,0 +1,16 @@
+title: Page
+
+pages:
+  template:
+    - default
+    - contact
+    - archive
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  text:
+    label: Text
+    type:  textarea

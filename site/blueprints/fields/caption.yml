@@ -1,0 +1,6 @@
+label: Image caption
+type: text
+icon: image
+help: >
+  The caption is optional and displayed directly below the image.
+  Enter a detailed description if necessary, otherwise leave blank.

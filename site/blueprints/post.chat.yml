@@ -1,0 +1,28 @@
+title: Post (Chat)
+
+pages: false
+files:
+  fields:
+    alt: alt
+    caption: caption
+
+fields:
+  title: title
+
+  date: date
+
+  category: category
+
+  sticky: sticky
+
+  coverimage: coverimage
+
+  author: author
+
+  text:
+    label: Chat
+    type:  textarea
+
+  tags:
+    label: Tags
+    type: tags

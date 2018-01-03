@@ -1,0 +1,11 @@
+label: Date & Time
+type:  datetime
+default: now
+date:
+  format: YYYY-MM-DD
+time:
+  format: 12
+  interval: 1
+  default: now
+required: true
+width: 1/2

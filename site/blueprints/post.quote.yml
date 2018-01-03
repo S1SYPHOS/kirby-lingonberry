@@ -1,0 +1,38 @@
+title: Post (Quote)
+
+pages: false
+files:
+  fields:
+    alt: alt
+    caption: caption
+
+fields:
+  title: title
+
+  date: date
+
+  category: category
+
+  sticky: sticky
+
+  coverimage: coverimage
+
+  author: author
+
+  text:
+    label: Quote
+    type:  textarea
+
+  source:
+    label: Author / Source
+    type: text
+    width: 1/2
+
+  link:
+    label: Link
+    type: url
+    width: 1/2
+
+  tags:
+    label: Tags
+    type: tags

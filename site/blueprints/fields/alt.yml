@@ -1,0 +1,7 @@
+label: Alternative text
+type: text
+icon: wheelchair
+help: >
+  The alternative text is required for images to meet
+  <a href="http://webaim.org/techniques/alttext" target="_blank">web
+  accessibility standards</a>. Enter a concise description of the image.

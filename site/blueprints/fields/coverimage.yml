@@ -1,0 +1,6 @@
+label: Cover Image
+type: quickselect
+options: images
+width: 1/2
+help: >
+  Upload images first, then select a cover image.

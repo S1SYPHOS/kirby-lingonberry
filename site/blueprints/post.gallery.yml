@@ -1,0 +1,34 @@
+title: Post (Gallery)
+
+pages: false
+files:
+  fields:
+    alt: alt
+    caption: caption
+
+fields:
+  title: title
+
+  date: date
+
+  category: category
+
+  sticky: sticky
+
+  author: author
+
+  gallery:
+    label: Gallery
+    type: images
+
+  intro:
+    label: Introduction
+    type:  textarea
+
+  text:
+    label: Text
+    type:  textarea
+
+  tags:
+    label: Tags
+    type: tags

@@ -1,0 +1,41 @@
+Title: Lingonberry
+
+----
+
+Author: 
+
+----
+
+Tagline: Just another Kirby site
+
+----
+
+Copyright: 
+
+----
+
+Description: This is the ~~WordPress~~ Kirby theme Lingonberry, originally developed by (link: http://www.andersnoren.se/ text: Anders Norén popup: yes).
+
+----
+
+Footer: Theme by (link: http://www.andersnoren.se/ text: Anders Norén popup: yes)
+
+----
+
+Categories: Design,Funny,Games,Lifestyle,Movies,Music,Personal,Quotes,Reviews,Technology
+
+----
+
+Logo: logo.jpg
+
+----
+
+Error: No results. Try again, would you kindly?
+
+----
+
+Color: #ff706c
+
+----
+
+No-posts: This blog does not contain any articles yet.

@@ -1,0 +1,42 @@
+title: Home
+
+files: false
+
+pages:
+  sort: flip
+  num: date
+  template:
+    - post.aside
+    - post.audio
+    - post.chat
+    - post.gallery
+    - post.image
+    - post.link
+    - post.quote
+    - post.standard
+    - post.status
+    - post.video
+  limit: 15
+
+fields:
+  title:
+    label: Title
+    type:  text
+    width: 3/4
+
+  perpage:
+    label: Posts per page
+    type: number
+    min: 1
+    max: 20
+    default: 5
+    width: 1/4
+
+  info:
+    label: Hint
+    type: info
+    text: >
+      The blog page fetches its subpages and displays them as blog posts.
+      To fill the blog page with content, just hit the <b>Add</b> button
+      to create a new article. Your blog articles will be automatically ordered by
+      date.

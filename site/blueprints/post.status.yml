@@ -1,0 +1,26 @@
+title: Post (Status)
+
+pages: false
+files:
+  fields:
+    alt: alt
+    caption: caption
+
+fields:
+  title: title
+
+  date: date
+
+  category: category
+
+  sticky: sticky
+
+  author: author
+
+  text:
+    label: Text
+    type:  textarea
+
+  tags:
+    label: Tags
+    type: tags

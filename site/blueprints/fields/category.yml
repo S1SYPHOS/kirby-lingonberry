@@ -1,0 +1,19 @@
+label: Categories
+type: multiselect
+#options:
+#  Design: Design
+#  Funny: Funny
+#  Games: Games
+#  Lifestyle: Lifestyle
+#  Movies: Movies
+#  Music: Music
+#  Personal: Personal
+#  Quotes: Quotes
+#  Reviews: Reviews
+#  Technology: Technology
+#  Video: Video
+options: field
+field:
+  page: /
+  name: categories
+width: 1/2

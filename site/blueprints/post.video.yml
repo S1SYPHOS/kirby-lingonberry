@@ -1,0 +1,30 @@
+title: Post (Video)
+
+pages: false
+files:
+  fields:
+    alt: alt
+    caption: caption
+
+fields:
+  title: title
+
+  date: date
+
+  category: category
+
+  sticky: sticky
+
+  author: author
+
+  covervideo:
+    label: Embed code
+    type:  text
+
+  text:
+    label: Text
+    type:  textarea
+
+  tags:
+    label: Tags
+    type: tags

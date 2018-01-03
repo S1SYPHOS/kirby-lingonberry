@@ -1,0 +1,21 @@
+Title: Just a little heads up
+
+----
+
+Author:
+
+----
+
+Date: 2013-06-30
+
+----
+
+Text: This is the WordPress theme Lingonberry, developed by (link: http://www.andersnoren.se/ text: Anders Norén popup: yes). It can be downloaded for free from the (link: http://wordpress.org/themes/lingonberry text: official WordPress theme depository popup: yes).
+
+----
+
+Tags: themeforest,wordpress
+
+----
+
+Category: Design, Personal
