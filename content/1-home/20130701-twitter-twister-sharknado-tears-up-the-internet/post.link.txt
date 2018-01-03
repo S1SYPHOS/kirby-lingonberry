@@ -2,11 +2,11 @@ Title: Twitter twister: 'Sharknado' tears up the internet
 
 ----
 
-Author: 
+Author: admin
 
 ----
 
-Date: 2013-07-01
+Date: 2013-07-01 05:20 PM
 
 ----
 
@@ -15,3 +15,11 @@ Text:
 > A TV movie about shark-infested tornadoes took the internet by storm last night, marking one of the most bizarre social media events in recent memory.
 
 The ecosystem of movie studios creating bottom-of-the-barrel B-movies targeted at Netflix is fascinating. Make sure to read the Pacific Standard (link: http://www.psmag.com/culture/escapes-from-the-asylum-60701/ text: article popup: yes) if you want to know more.
+
+----
+
+Category: Movies
+
+----
+
+Sticky: 0

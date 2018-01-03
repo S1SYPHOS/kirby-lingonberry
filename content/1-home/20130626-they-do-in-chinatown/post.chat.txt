@@ -2,7 +2,7 @@ Title: "They do in Chinatown"
 
 ----
 
-Author:
+Author: admin
 
 ----
 
@@ -10,11 +10,11 @@ Coverimage: chinatown.jpg
 
 ----
 
-Date: 2013-06-26
+Date: 2013-06-26 05:24 PM
 
 ----
 
-Text:
+Text: 
 
 **Evelyn Mulwray**: Tell me, Mr. Gittes**: Does this often happen to you?
 
@@ -51,3 +51,7 @@ Tags: chinatown,jack nicholson
 ----
 
 Category: Movies, Quotes
+
+----
+
+Sticky: 0

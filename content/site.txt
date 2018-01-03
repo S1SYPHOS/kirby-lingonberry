@@ -2,15 +2,11 @@ Title: Lingonberry
 
 ----
 
-Author: 
-
-----
-
 Tagline: Just another Kirby site
 
 ----
 
-Copyright: 
+Copyright:
 
 ----
 
@@ -22,7 +18,7 @@ Footer: Theme by (link: http://www.andersnoren.se/ text: Anders Norén popup: ye
 
 ----
 
-Categories: Design,Funny,Games,Lifestyle,Movies,Music,Personal,Quotes,Reviews,Technology
+Categories: Design,Funny,Games,Lifestyle,Movies,Music,Personal,Quotes,Reviews,Technology,Video
 
 ----
 

@@ -2,11 +2,11 @@ Title: Animation: Bob by Jacob Frey
 
 ----
 
-Authors:
+Authors: 
 
 ----
 
-Date: 2013-06-28
+Date: 2013-06-28 05:19 PM
 
 ----
 
@@ -26,4 +26,8 @@ Category: Movies, Video
 
 ----
 
-Author:
+Author: admin
+
+----
+
+Sticky: 0

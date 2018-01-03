@@ -2,19 +2,19 @@ Title: One of the best scenes from Glengarry Glen Ross
 
 ----
 
-Author:
+Author: admin
 
 ----
 
-Coverimage:
+Coverimage: 
 
 ----
 
-Date: 2013-07-03
+Date: 2013-07-03 05:19 PM
 
 ----
 
-Text:
+Text: 
 
 **Blake**: What’s the problem, pal?
 
@@ -33,3 +33,7 @@ Tags: glengarry glen ross
 ----
 
 Category: Movies
+
+----
+
+Sticky: 0
