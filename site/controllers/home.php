@@ -8,7 +8,7 @@ return function($site, $pages, $page) {
   // Posts
   $posts = $page->children()
                 ->visible()
-                ->sortBy('sticky', 'desc', 'date', 'desc')
+                ->sortBy('date', 'desc', 'sticky', 'desc')
                 ->paginate(($perpage >= 1)? $perpage : 5);
 
   // Posts by category
@@ -16,7 +16,8 @@ return function($site, $pages, $page) {
   $postsByCategory = $page->children()
                           ->visible()
                           ->filterBy('category', $category, ',')
-                          ->sortBy('sticky', 'desc', 'date', 'desc')
+                          ->sortBy('date', 'desc', 'sticky', 'desc')
+                          ->flip()
                           ->paginate(($perpage >= 1)? $perpage : 5);
 
   // Posts by tag
@@ -24,7 +25,7 @@ return function($site, $pages, $page) {
   $postsByTag = $page->children()
                      ->visible()
                      ->filterBy('tags', $tag, ',')
-                     ->sortBy('sticky', 'desc', 'date', 'desc')
+                     ->sortBy('date', 'desc', 'sticky', 'desc')
                      ->paginate(($perpage >= 1)? $perpage : 5);
 
   // Posts by author
@@ -33,7 +34,7 @@ return function($site, $pages, $page) {
   $postsByAuthor = $page->children()
                         ->visible()
                         ->filterBy('author', $author)
-                        ->sortBy('sticky', 'desc', 'date', 'desc')
+                        ->sortBy('date', 'desc', 'sticky', 'desc')
                         ->paginate(($perpage >= 1)? $perpage : 5);
 
   // Posts by year
@@ -41,7 +42,7 @@ return function($site, $pages, $page) {
   $postsByYear = $page->children()
                       ->visible()
                       ->filter(function($child) use($year) { return $child->date('Y') === $year; })
-                      ->sortBy('sticky', 'desc', 'date', 'desc')
+                      ->sortBy('date', 'desc', 'sticky', 'desc')
                       ->paginate(($perpage >= 1)? $perpage : 5);
 
   // Posts by month
@@ -49,7 +50,7 @@ return function($site, $pages, $page) {
   $postsByMonth = $page->children()
                        ->visible()
                        ->filter(function($child) use($year, $month) { return $child->date('Y') === $year && $child->date('F') === $month; })
-                       ->sortBy('sticky', 'desc', 'date', 'desc')
+                       ->sortBy('date', 'desc', 'sticky', 'desc')
                        ->paginate(($perpage >= 1)? $perpage : 5);
 
   // Posts by day
@@ -57,13 +58,13 @@ return function($site, $pages, $page) {
   $postsByDay = $page->children()
                        ->visible()
                        ->filter(function($child) use($year, $month, $day) { return $child->date('Y') === $year && $child->date('F') === $month && $child->date('j') === $day; })
-                       ->sortBy('sticky', 'desc', 'date', 'desc')
+                       ->sortBy('date', 'desc', 'sticky', 'desc')
                        ->paginate(($perpage >= 1)? $perpage : 5);
-  
+
   // Search results
   $query = get('s');
   $results = $site->search($query, 'title|intro|text')
-                  ->sortBy('sticky', 'desc', 'date', 'desc')
+                  ->sortBy('date', 'desc', 'sticky', 'desc')
                   ->paginate(($perpage >= 1)? $perpage : 5);
 
   return [
@@ -93,7 +94,7 @@ return function($site, $pages, $page) {
 
     'day' => $day,
     'postsByDay' => $postsByDay,
-    'paginationByDay' => $postsByDay->pagination(),   
+    'paginationByDay' => $postsByDay->pagination(),
 
     'query'   => $query,
     'results' => $results,
