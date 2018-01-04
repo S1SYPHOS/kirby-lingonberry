@@ -2,19 +2,19 @@ Title: To Infinity and Beyond: About Pixar
 
 ----
 
-Authors: 
+Authors:
 
 ----
 
-Coverimage: 
+Coverimage:
 
 ----
 
-Date: 2013-06-29 05:24 PM
+Date: 2013-06-29 05:02 PM
 
 ----
 
-Intro: 
+Intro:
 
 Pixar Animation Studios, or simply Pixar (/ˈpɪksɑr/, stylized PIXAR), is an American computer animation film studio based in Emeryville, California.
 
@@ -24,7 +24,7 @@ Pixar began in 1979 as the Graphics Group, part of the computer division of Luca
 
 ----
 
-Text: 
+Text:
 
 > “Pixar is seen by a lot of folks as an overnight success, but if you really look closely, most overnight successes took a long time.”
 > <cite>Steve Jobs</cite>

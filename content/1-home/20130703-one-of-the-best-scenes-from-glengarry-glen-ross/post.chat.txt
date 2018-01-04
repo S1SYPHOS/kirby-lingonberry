@@ -6,15 +6,15 @@ Author: admin
 
 ----
 
-Coverimage: 
+Coverimage:
 
 ----
 
-Date: 2013-07-03 05:19 PM
+Date: 2013-07-03 02:32 PM
 
 ----
 
-Text: 
+Text:
 
 **Blake**: What’s the problem, pal?
 

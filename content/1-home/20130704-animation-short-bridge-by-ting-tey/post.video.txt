@@ -2,7 +2,7 @@ Title: Animation short: Bridge by Ting Tey
 
 ----
 
-Date: 2013-07-04 09:45 AM
+Date: 2013-07-04 10:22 PM
 
 ----
 
@@ -14,7 +14,7 @@ Tags: animation,graphics,video
 
 ----
 
-Authors: 
+Authors:
 
 ----
 

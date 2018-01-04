@@ -6,7 +6,7 @@ Authors: admin
 
 ----
 
-Gallery: 
+Gallery:
 
 - dr_1.jpg
 - dr_2.jpg
@@ -15,11 +15,11 @@ Gallery:
 
 ----
 
-Date: 2013-07-05 02:30 PM
+Date: 2013-07-05 10:40 PM
 
 ----
 
-Intro: 
+Intro:
 
 Dieter Rams (born 20 May 1932 in Wiesbaden, Hessen) is a German industrial designer closely associated with the consumer products company Braun and the Functionalist school of industrial design.
 
@@ -27,7 +27,7 @@ Rams began studies in architecture and interior decoration at Wiesbaden School o
 
 ----
 
-Text: 
+Text:
 
 (image: dieter-rams.jpg class: alignright)
 

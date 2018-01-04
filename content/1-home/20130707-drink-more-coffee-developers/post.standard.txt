@@ -2,11 +2,11 @@ Title: Drink more coffee, developers
 
 ----
 
-Date: 2013-07-07 05:45 PM
+Date: 2013-07-07 02:20 PM
 
 ----
 
-Text: 
+Text:
 
 > “Among the numerous luxuries of the table…coffee may be considered as one of the most valuable. It excites cheerfulness without intoxication; and the pleasing flow of spirits which it occasions…is never followed by sadness, languor or debility.”
 > <cite>Benjamin Franklin</cite>
@@ -23,7 +23,7 @@ Tags: coffee,developers,food
 
 ----
 
-Intro: 
+Intro:
 
 Coffee is a brewed beverage with a distinct aroma and flavor, prepared from the roasted seeds of the Coffea plant. The seeds are found in coffee cherries, which grow on trees cultivated in over 70 countries.
 
