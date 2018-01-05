@@ -15,8 +15,12 @@ Use one of the following methods to start blogging with `kirby-lingonberry`:
 1. [Clone](https://github.com/S1SYPHOS/kirby-lingonberry.git) or [download](https://github.com/S1SYPHOS/kirby-lingonberry/archive/master.zip) this repository.
 2. Unzip / Upload the folder to your site's `root`.
 
+<<<<<<< HEAD
 ### Configuration
 Detailed instructions coming soon!
+=======
+**Note:** The included demo content needs an existing user called `admin`, otherwise you'll get an error.  Therefore, **simply delete all folders** inside `content/home/` and start your own blog (this will be taken care of in the next release).
+>>>>>>> 915ae94490187233a8dd91be313935916a952e2b
 
 ## Credits / License
 This is a [port](https://en.wikipedia.org/wiki/Porting) of the Wordpress theme 'Lingonberry', which was originally developed by [Anders Norén](http://andersnoren.se). `kirby-lingonberry` is licensed under the [GPL v2](LICENSE), but **using Kirby in production** requires you to [buy a license](https://getkirby.com/buy). Are you ready for the [next step](https://getkirby.com/next)?
