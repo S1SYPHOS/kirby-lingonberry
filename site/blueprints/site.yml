@@ -51,8 +51,7 @@ fields:
       This message is displayed when no search results could be found,
       followed by a search form.
 
-
-
   footer:
     label: Footer text
     type:  textarea
+

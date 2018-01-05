@@ -1,7 +1,0 @@
-Title: Archive Template
-
-----
-
-Text: 
-
-This is the Archive Template. Simple create a new page, select the Archive Template and the page will list the posts, categories, tags and contributors on your blog.

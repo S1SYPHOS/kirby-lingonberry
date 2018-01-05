@@ -1,9 +1,0 @@
-Title: Contact Template
-
-----
-
-Text: 
-
-This is the Contact Template. Simply create a new page, select the Contact Template and the page will include your form - Lingonberry will automatically style it properly. Neat!
-
-Just check out `site/templates/contact.php` and modify everything to suit your needs.

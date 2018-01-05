@@ -2,11 +2,15 @@ Title: Lingonberry
 
 ----
 
+Color: #ff706c
+
+----
+
 Tagline: Just another Kirby site
 
 ----
 
-Copyright:
+Logo: 
 
 ----
 
@@ -14,15 +18,11 @@ Description: This is the ~~WordPress~~ Kirby theme Lingonberry, originally devel
 
 ----
 
-Footer: Theme by (link: http://www.andersnoren.se/ text: Anders Norén popup: yes)
+Categories: 
 
 ----
 
-Categories: Design,Funny,Games,Lifestyle,Movies,Music,Personal,Quotes,Reviews,Technology,Video
-
-----
-
-Logo: logo.jpg
+No-posts: This blog does not contain any articles yet.
 
 ----
 
@@ -30,8 +30,5 @@ Error: No results. Try again, would you kindly?
 
 ----
 
-Color: #ff706c
+Footer: Theme by (link: http://www.andersnoren.se/ text: Anders Norén popup: yes)
 
-----
-
-No-posts: This blog does not contain any articles yet.
