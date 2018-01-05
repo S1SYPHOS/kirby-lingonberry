@@ -1,0 +1,145 @@
+
+$white:       #fff;
+$white-dirty: #efefef;
+$grey:        #ddd;
+$grey-light:  #eee;
+$green:       #8dae28;
+$focussed:    rgba($green, .1);
+
+.input-with-multiselect {
+
+  .display {
+    cursor: pointer;
+  }
+
+  .input-is-focused {
+    border-bottom-color: $grey;
+  }
+
+  .item {
+    background: none;
+
+    &:not(:last-of-type):after {
+      content: ', ';
+    }
+  }
+
+  .list {
+    display:          none;
+    position:         absolute;
+    top:              100%;
+    right:            0;
+    left:             0;
+    max-height:       185px;
+    border:           solid $green;
+    border-width:     0 2px 2px;
+    background-color: $white;
+    overflow:         auto;
+    z-index:          10;
+
+    .input {
+      padding:   .2em .5em;
+      border:    none;
+      font-size: .9em;
+      cursor:    pointer;
+    }
+  }
+
+  .list-item {
+    margin: 0;
+
+    &:first-of-type {
+      padding-top: .2em;
+    }
+
+    &:last-of-type {
+      padding-bottom: .2em;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px dashed $grey;
+    }
+
+    > .input {
+      min-height:     0;
+      padding-top:    .4em;
+      padding-bottom: .4em;
+    }
+
+    &--focused {
+      background-color: $focussed;
+
+      > .input {
+        background-color: $focussed;
+      }
+
+      .checkbox + span:before {
+        border-color: $green;
+        color:        transparent;
+      }
+    }
+  }
+
+
+  // Checkboxes
+  .checkbox {
+    display: none;
+
+    + span:before {
+      margin-right:   10px;
+      padding:        1px;
+      border:         1px solid $grey;
+      color:          transparent;
+      font-family:    'FontAwesome';
+      font-size:      11px;
+      content:        '\f00c';
+      vertical-align: 2%;
+    }
+
+    &:checked + span:before {
+      border-color: $green;
+      color:        $green !important;
+    }
+  }
+
+  // Search
+  .search-bar {
+    width:            100%;
+    padding:          .4em 2.2em .5em;
+    border:           none;
+    border-bottom:    1px dashed $grey;
+    background-color: $white-dirty;
+    font-size:        .9em;
+
+    &:focus {
+      border:        none;
+      border-bottom: 1px dashed $grey;
+      outline:       none;
+    }
+  }
+
+  // Search results
+  .list b {
+    color: $green;
+  }
+
+
+  // readonly or disabled
+  .field-is-readonly & ,
+  .field-is-disabled & {
+    .display {
+      cursor: default;
+    }
+
+    .field-icon {
+      display: block !important;
+    }
+  }
+}
+
+// structure field fix
+.modal-content {
+  &.overflowing {
+    overflow: visible !important;
+  }
+}
