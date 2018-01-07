@@ -3,6 +3,8 @@
 
 A Kirby port of the [Wordpress](https://wordpress.org) theme '[Lingonberry](https://wordpress.org/themes/lingonberry)'.
 
+> Lingonberry is a clean theme for bloggers, with responsive design and beautiful typography.
+
 **Table of contents**
 - [1. Getting started](#getting-started)
 - [2. Credits / License](#credits--license)
@@ -19,7 +21,7 @@ Use one of the following methods to start blogging with `kirby-lingonberry`:
 Detailed instructions coming soon!
 
 ## Credits / License
-This is a [port](https://en.wikipedia.org/wiki/Porting) of the Wordpress theme 'Lingonberry', which was originally developed by [Anders Norén](http://andersnoren.se). `kirby-lingonberry` is licensed under the [GPL v2](LICENSE), but **using Kirby in production** requires you to [buy a license](https://getkirby.com/buy). Are you ready for the [next step](https://getkirby.com/next)?
+This is a [port](https://en.wikipedia.org/wiki/Porting) of the Wordpress theme 'Lingonberry', which was originally developed by [Anders Norén](http://www.andersnoren.se/teman/lingonberry-wordpress-theme). `kirby-lingonberry` is licensed under the [GPL v2](LICENSE), but **using Kirby in production** requires you to [buy a license](https://getkirby.com/buy). Are you ready for the [next step](https://getkirby.com/next)?
 
 **Used Kirby extensions:**
 - [Images](https://github.com/medienbaecker/kirby-images)
