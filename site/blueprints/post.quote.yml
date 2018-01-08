@@ -1,10 +1,7 @@
 title: Post (Quote)
 
 pages: false
-files:
-  fields:
-    alt: alt
-    caption: caption
+files: false
 
 fields:
   title: title
@@ -14,8 +11,6 @@ fields:
   category: category
 
   sticky: sticky
-
-  coverimage: coverimage
 
   author: author
 
