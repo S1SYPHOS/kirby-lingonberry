@@ -8,7 +8,7 @@
 
   <?php foreach($formats as $format) : ?>
   <?php if($intended == 'post.' . $format) : ?>
-  <div class="post format-<?= $format ?>">
+  <div class="post format-<?= $format ?><?php e(!$page->isHomePage(), ' single-format-' . $format) ?>">
     <?php snippet('post/bubble', $item) ?>
     <div class="content-inner">
        <?php snippet('post/formats/' .  $format, $item) ?>
