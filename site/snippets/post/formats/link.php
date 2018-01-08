@@ -1,6 +1,6 @@
 <?php
-	$string = $item->intendedTemplate();
-	$format = substr($string, 5);
+  $string = $item->intendedTemplate();
+  $format = substr($string, 5);
 ?>
 
 <div class="post format-<?= $format ?><?php e(!$page->isHomePage(), ' single-format-' . $format) ?>">
