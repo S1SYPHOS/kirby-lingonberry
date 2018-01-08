@@ -6,6 +6,7 @@
 <div class="post format-<?= $format ?>">
   <?php snippet('post/bubble', $item) ?>
   <div class="content-inner">
+    <?php snippet('post/coverimage', $item) ?>
     <div class="post-header<?php e($page->isHomePage(), ' hidden')?>">
       <?php if($page->isHomePage()) : ?>
       <h2 class="post-title">
