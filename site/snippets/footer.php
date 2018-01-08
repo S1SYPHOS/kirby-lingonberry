@@ -7,7 +7,7 @@
       $tags = page('home')->children()->visible()->pluck('tags', ',', true);
       sort($tags);
     ?>
-  	<div class="footer section">
+    <div class="footer section">
       <div class="footer-inner section-inner">
         <div class="widgets">
           <div class="widget">
@@ -63,7 +63,7 @@
         </div><!-- .widgets -->
         <div class="clear"></div>
       </div><!-- .footer-inner -->
-  	</div><!-- .footer -->
+    </div><!-- .footer -->
 
     <div class="credits section">
       <div class="credits-inner section-inner">
