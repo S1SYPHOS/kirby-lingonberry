@@ -22,7 +22,15 @@
 
   <body class="<?= $type ?><?= $search ?><?php e($page->coverimage()->isNotEmpty(), ' has-featured-image') ?>">
 
-    <?php snippet('navigation') ?>
+    <div class="navigation">
+      <div class="navigation-inner section-inner">
+        <ul class="blog-menu">
+          <?php snippet('menu') ?>
+        </ul>
+        <?php snippet('search-form') ?>
+        <div class="clear"></div>
+      </div><!-- .navigation-inner -->
+    </div><!-- .navigation -->
 
     <div class="header section">
       <div class="header-inner section-inner">
