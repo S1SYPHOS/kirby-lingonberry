@@ -7,6 +7,6 @@
   <a class="post-nav-newer" href="<?= $item->prevPageURL() ?>">Newer<span> posts</span> &raquo;</a>
   <?php endif ?>
   <div class="clear"></div>
-</div>
+</div><!-- /post-nav archive-nav -->
 <div class="clear"></div>
 <?php endif ?>

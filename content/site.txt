@@ -31,4 +31,3 @@ Error: No results. Try again, would you kindly?
 ----
 
 Footer: Theme by (link: http://www.andersnoren.se/ text: Anders Norén popup: yes)
-
