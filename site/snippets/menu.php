@@ -3,7 +3,7 @@
   if($items->count()) :
 ?>
 <?php foreach($items as $item) : ?>
-<li<?php e($item->hasVisibleChildren() and $item !== page('home'), ' class="has-children"') ?>>
+<li<?php e($item->hasVisibleChildren() && $item !== page('home'), ' class="has-children"') ?>>
   <a href="<?= $item->url() ?>">
   <?= $item->title()->html() ?>
   </a>
