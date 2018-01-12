@@ -56,10 +56,10 @@ return function($site, $pages, $page) {
   // Posts by day
   $day = param('day');
   $postsByDay = $page->children()
-                       ->visible()
-                       ->filter(function($child) use($year, $month, $day) { return $child->date('Y') === $year && $child->date('F') === $month && $child->date('j') === $day; })
-                       ->sortBy('sticky', 'desc', 'date', 'desc')
-                       ->paginate(($perpage >= 1)? $perpage : 5);
+                     ->visible()
+                     ->filter(function($child) use($year, $month, $day) { return $child->date('Y') === $year && $child->date('F') === $month && $child->date('j') === $day; })
+                     ->sortBy('sticky', 'desc', 'date', 'desc')
+                     ->paginate(($perpage >= 1)? $perpage : 5);
 
   // Search results
   $query = get('s');
