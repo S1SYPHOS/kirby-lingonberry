@@ -1,0 +1,6 @@
+title: Feed
+
+fields:
+  title:
+    label: Title
+    type:  text

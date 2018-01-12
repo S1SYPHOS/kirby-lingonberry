@@ -15,6 +15,7 @@
   <?= css('assets/style.css') ?>
 
   <?php if($site->color() != '#ff706c') : ?>
+  <!-- CUSTOM COLORS -->
   <style>
     body a,
     body a:hover,
@@ -35,6 +36,6 @@
   </style>
   <?php endif?>
 
-  <!-- Planned: RSS -->
-  <!--  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">-->
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="<?= $site->title()->html() . ' &raquo; ' . page('feed')->title()->html() ?>" href="<?= url('feed') ?>">
 </head>
