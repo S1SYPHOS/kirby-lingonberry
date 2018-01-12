@@ -5,13 +5,9 @@ files: false
 
 fields:
   title: title
-
   date: date
-
   category: category
-
   sticky: sticky
-
   author: author
 
   text:

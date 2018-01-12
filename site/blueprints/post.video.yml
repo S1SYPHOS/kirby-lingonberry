@@ -8,13 +8,9 @@ files:
 
 fields:
   title: title
-
   date: date
-
   category: category
-
   sticky: sticky
-
   author: author
 
   covervideo:

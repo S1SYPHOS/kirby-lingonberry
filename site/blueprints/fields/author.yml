@@ -1,4 +1,4 @@
 label: Author
 type: user
-default: false
 width: 1/2
+readonly: true

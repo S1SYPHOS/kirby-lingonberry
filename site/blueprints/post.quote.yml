@@ -8,15 +8,10 @@ files:
 
 fields:
   title: title
-
   date: date
-
   category: category
-
   sticky: sticky
-
   coverimage: coverimage
-
   author: author
 
   text:
