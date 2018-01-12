@@ -1,5 +1,5 @@
 <?php
-  $author = $site->user($item->author());
+  $user = $site->user($item->author());
 ?>
 
 <div class="post-meta">
@@ -11,10 +11,10 @@
 
   <span class="date-sep"> / </span>
   <span class="post-author">
-    <?php if($item->author()->isNotEmpty()) : ?>
-    <?php $authorURL = url('home') . '/author:' . urlencode($author); ?>
-    <a href="<?= $authorURL ?>" title="Posts by <?= $author->firstName() . ' ' . $author->lastName() ?>">
-    <?= $author->firstName() . ' ' . $author->lastName() ?>
+    <?php if($user) : ?>
+    <?php $authorURL = url('home') . '/author:' . urlencode($user); ?>
+    <a href="<?= $authorURL ?>" title="Posts by <?= $user->firstName() . ' ' . $user->lastName() ?>">
+    <?= $user->firstName() . ' ' . $user->lastName() ?>
     </a>
     <?php else : ?>
     Anonymous
