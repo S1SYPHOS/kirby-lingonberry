@@ -1,0 +1,154 @@
+Title: Style Guide
+
+----
+
+Text: 
+
+This style guide demonstrates the default presentation of elements in Lingonberry. The page can also be used as a blueprint for how to present content within the theme in an effective way.
+
+---
+
+# Heading one
+## Heading two
+### Heading three
+#### Heading four
+##### Heading five
+###### Heading six
+
+---
+
+### Blockquote
+
+The blockquote tag can be used to display a quote from a person or from another site. It can be as long or as short as you like, and it is displayed like this:
+
+> “Among the numerous luxuries of the table…coffee may be considered as one of the most valuable. It excites cheerfulness without intoxication; and the pleasing flow of spirits which it occasions…is never followed by sadness, languor or debility.”
+> <cite>Benjamin Franklin</cite>
+
+---
+
+### Ordered List
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+
+### Unordered List
+
+- List Item 1
+- List Item 2
+- List Item 3
+
+### Mixed List
+
+1. List Item 1
+  - List Item 1
+  - List Item 2
+    1. List Item 1
+    2. List Item 2
+      - List Item 1
+      - List Item 2
+      - List Item 3
+    3. List Item 3
+  - List Item 3
+2. List Item 2
+3. List Item 3
+
+
+---
+
+### Table Styles
+
+|Table Header 1|Table Header 2|Table Header 3|
+|--- |--- |--- |
+|Division 1|Division 2|Division 3|
+|Division 1|Division 2|Division 3|
+|Division 1|Division 2|Division 3|
+
+---
+
+### Post Media
+
+#### Left aligned
+
+(image: typewriter.jpg class: alignleft alt: A left aligned typewriter.caption: A left aligned typewriter.)
+
+This is an image of a typewriter, aligned to the left. It also has a small caption. On smaller screen sizes, the image (and the caption) will clear the content and be centered in the content container. For the floated image to look good, the surrounding text will need to be of a certain length. That’s why I’m writing this filler text: A typewriter is a mechanical or electromechanical machine for writing in characters similar to those produced by printer’s movable type by means of keyboard-operated types striking a ribbon to transfer ink or carbon impressions onto the paper.
+
+#### Right aligned
+
+(image: typewriter.jpg class: alignright alt: A right aligned typewriter. caption: A right aligned typewriter.)
+
+This is an image of a typewriter, aligned to the right. It also has a small caption. On smaller screen sizes, the image (and the caption) will clear the content and be centered in the content container. For the floated image to look good, the surrounding text will need to be of a certain length. That’s why I’m writing this filler text: Typically one character is printed per keypress. The machine prints characters by making ink impressions of type elements similar to the sorts used in movable type letterpress printing.
+
+#### Center aligned
+
+(image: typewriter.jpg class: aligncenter alt: A center aligned typewriter. caption: A center aligned typewriter.)
+
+This is a center aligned image. It also has a small caption. After their invention in the 1860s, typewriters quickly became indispensable tools for practically all writing other than personal correspondence. They were widely used by professional writers, in offices, and for business correspondence in homes.
+
+---
+
+<fieldset>
+   <legend>Legend</legend>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam 
+dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis 
+suscipit dui.</p>
+   <form>
+     <h2>Form</h2>
+     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam 
+dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis 
+suscipit dui.</p>
+     <p>
+       <label for="text_field">Text:</label><br>
+       <input type="text" id="text_field">
+     </p>
+     <p>
+       <label for="text_area">Text:</label><br>
+       <textarea id="text_area"></textarea>
+     </p>
+     <p>
+       <label for="select_element">Select:</label><br>
+       <select name="select_element">
+         <optgroup label="Option Group 1">
+           <option value="1">Option 1</option>
+           <option value="2">Option 2</option>
+           <option value="3">Option 3</option>
+         </optgroup>
+         <optgroup label="Option Group 2">
+           <option value="1">Option 1</option>
+           <option value="2">Option 2</option>
+           <option value="3">Option 3</option>
+         </optgroup>
+       </select>
+     </p>
+     <p>
+       <label for="radio_buttons">Radio:</label><br>
+       <input type="radio" class="radio" name="radio_button" 
+value="radio_1"> Radio 1<br>
+       <input type="radio" class="radio" name="radio_button" 
+value="radio_2"> Radio 2<br>
+       <input type="radio" class="radio" name="radio_button" 
+value="radio_3"> Radio 3
+     </p>
+     <p>
+       <label for="checkboxes">Checkboxes:</label><br>
+       <input type="checkbox" class="checkbox" name="checkboxes" 
+value="check_1"> Radio 1<br>
+       <input type="checkbox" class="checkbox" name="checkboxes" 
+value="check_2"> Radio 2<br>
+       <input type="checkbox" class="checkbox" name="checkboxes" 
+value="check_3"> Radio 3
+     </p>
+     <p>
+       <label for="password">Password:</label><br>
+       <input type="password" class="password" name="password">
+     </p>
+     <p>
+       <label for="file">File:</label><br>
+       <input type="file" class="file" name="file">
+     </p>
+     <p>
+       <input class="button" type="reset" value="Clear">&nbsp;<input class="button" type="submit" value="Submit">
+     </p>
+   </form>
+</fieldset>

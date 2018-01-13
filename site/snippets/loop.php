@@ -1,13 +1,37 @@
 <?php
-  $formats = c::get('lingonberry.post-formats');
+  $formats = dir::read(kirby()->roots()->snippets() . '/post/formats');
   $template = $item->template();
   $intended = $item->intendedTemplate();
+?>
+
+<?php
+
+/*
+
+---------------------------------------
+Loop snippet
+---------------------------------------
+
+This snippet controls the view depending on the
+$item's (intended) template: It differentiates
+between blog posts and pages, which are assigned
+their specific content, embedded in code they share.
+
+The $formats array consists of all files inside the
+directory 'site/snippets/posts/formats', which makes
+it quite easy to customise available post types.
+
+*/
+
 ?>
 
 <?php if($item->isChildOf('home')) : ?>
 
   <?php foreach($formats as $format) : ?>
-  <?php if($intended == 'post.' . $format) : ?>
+  <?php
+    $format = substr($format, 0, -4);
+    if($intended == 'post.' . $format) :
+  ?>
   <div class="post format-<?= $format ?><?php e(!$page->isHomePage(), ' single-format-' . $format) ?>">
     <?php snippet('post/bubble', $item) ?>
     <div class="content-inner">

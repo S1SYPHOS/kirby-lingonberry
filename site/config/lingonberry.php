@@ -9,23 +9,10 @@ Lingonberry Settings
 */
 
 // Kirby-specific
-c::set('markdown.extra',false);
+c::set('markdown.extra', true);
 
 // Theme-specific
 c::set('lingonberry.upload-quality', 85);
-c::set('lingonberry.post-formats', array(
-  'aside',
-  'audio',
-  'chat',
-  'gallery',
-  'image',
-  'link',
-  'quote',
-  'standard',
-  'status',
-  'video',
-));
-
 
 /*
 
