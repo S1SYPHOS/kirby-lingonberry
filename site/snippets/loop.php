@@ -38,7 +38,14 @@ it quite easy to customise available post types.
        <?php snippet('post/formats/' .  $format, $item) ?>
     </div><!-- .post content-inner -->
     <div class="clear"></div>
-    <?php if($page->isChildOf('home')) { snippet('post/prevnext', $page); } ?>
+    <?php if($page->isChildOf('home')) {
+      snippet('post/prevnext', $page);
+
+      if(c::get('lingonberry.comments-enabled')) {
+        snippet('comments/list');
+        snippet('comments/form');
+      }
+    } ?>
   </div><!-- .post -->
   <?php endif ?>
   <?php endforeach ?>
