@@ -41,9 +41,10 @@ it quite easy to customise available post types.
     <?php if($page->isChildOf('home')) {
       snippet('post/prevnext', $page);
 
-      if(c::get('lingonberry.comments-enabled')) {
-        snippet('comments/list');
-        snippet('comments/form');
+      if(c::get('lingonberry.comments')) {
+        // snippet('post/comments/list');
+        // snippet('post/comments/form');
+        snippet('post/comments/nested');
       }
     } ?>
   </div><!-- .post -->

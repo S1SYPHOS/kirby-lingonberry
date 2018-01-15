@@ -12,11 +12,13 @@ Lingonberry Settings
 c::set('markdown.extra', true);
 
 // Theme-specific
-c::set('lingonberry.comments-enabled', true);
+c::set('lingonberry.comments', true);
+c::set('lingonberry.comments.preview', true);
 c::set('lingonberry.upload-quality', 85);
 
 // Plugin-specific
 c::set('comments.form.message.smartypants', false);
+c::set('comments.custom-fields', array(array('name' => 'reply-to')));
 
 /*
 
@@ -27,7 +29,7 @@ Routes
 */
 
 // Omitting the home folder in URLs
-if (!c::get('lingonberry.comments-enabled')) {
+if (!c::get('lingonberry.comments')) {
   c::set('routes', array(
     array(
       'pattern' => '(:any)',
