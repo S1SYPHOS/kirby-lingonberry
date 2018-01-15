@@ -12,12 +12,14 @@ Lingonberry Settings
 c::set('markdown.extra', true);
 
 // Theme-specific
-c::set('lingonberry.comments', true);
-c::set('lingonberry.comments.preview', true);
+c::set('lingonberry.comments', false);
+c::set('lingonberry.comments.nested', false);
+c::set('lingonberry.comments.preview', false);
 c::set('lingonberry.upload-quality', 85);
 
 // Plugin-specific
-c::set('comments.form.message.smartypants', false);
+c::set('comments.form.message.smartypants', false); // see 'Troubleshooting'
+c::set('comments.form.email.required', true);
 c::set('comments.custom-fields', array(array('name' => 'reply-to')));
 
 /*
