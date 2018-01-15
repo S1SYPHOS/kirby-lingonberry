@@ -1501,7 +1501,7 @@ p.logged-in-as {
 	display: none;
 }
 
-.comment-form input,
+.comment-form input:not([type="radio"]),
 .comment-form textarea {
 	-webkit-appearance: none;
 	border: none;

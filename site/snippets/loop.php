@@ -42,9 +42,11 @@ it quite easy to customise available post types.
       snippet('post/prevnext', $page);
 
       if(c::get('lingonberry.comments')) {
-        // snippet('post/comments/list');
-        // snippet('post/comments/form');
-        snippet('post/comments/nested');
+        if(c::get('lingonberry.comments.nested')) {
+          snippet('post/comments/nested');
+        } else {
+          snippet('post/comments/normal');
+        }
       }
     } ?>
   </div><!-- .post -->
