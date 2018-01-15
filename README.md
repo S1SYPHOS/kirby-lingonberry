@@ -7,7 +7,9 @@ A Kirby port of the [Wordpress](https://wordpress.org) theme '[Lingonberry](http
 
 **Table of contents**
 - [1. Getting started](#getting-started)
-- [2. Credits / License](#credits--license)
+- [2. Troubleshooting](#troubleshooting)
+  - [Configuration](#configuration)
+- [3. Credits / License](#credits--license)
 
 ![screenshot of the kirby-lingonberry theme](screenshot.png)
 
@@ -20,10 +22,18 @@ Use one of the following methods to start blogging with `kirby-lingonberry`:
 ### Configuration
 Detailed instructions coming soon!
 
+## Troubleshooting
+BETA COMMENTS!
+Too few arguments to function Kirby\Component\Smartypants::parse() > https://forum.getkirby.com/t/kirby-2-5-8-update-breaks-markdown-smartypants/9259
+solution = until then: smartypants:disabled!
+
+https://github.com/Addpixel/KirbyComments/issues/34 > route will be disabled when comments are turned on
+
 ## Credits / License
 This is a [port](https://en.wikipedia.org/wiki/Porting) of the Wordpress theme 'Lingonberry', which was originally developed by [Anders Norén](http://www.andersnoren.se/teman/lingonberry-wordpress-theme). `kirby-lingonberry` is licensed under the [GPL v2](LICENSE), but **using Kirby in production** requires you to [buy a license](https://getkirby.com/buy). Are you ready for the [next step](https://getkirby.com/next)?
 
 **Used Kirby extensions:**
+- [Comments](https://github.com/Addpixel/KirbyComments)
 - [RSS Feed](https://github.com/getkirby-plugins/feed-plugin)
 - [Images](https://github.com/medienbaecker/kirby-images)
 - [Quickselect](https://github.com/medienbaecker/kirby-quickselect)
@@ -32,4 +42,3 @@ This is a [port](https://en.wikipedia.org/wiki/Porting) of the Wordpress theme '
 
 ## Special Thanks
 I'd like to thank everybody that's making great software - you people are awesome. Also I'm always thankful for feedback and bug reports :)
-

@@ -48,7 +48,7 @@ $status = $comments->process();
 				<label for="url">Website</label>
 			</p>
 
-			<?php if ($comments->isUsingHoneypot()): ?>
+			<?php if ($comments->isUsingHoneypot()) : ?>
 			<div style="display: none" hidden>
 				<input type="text" name="<?= $comments->honeypotName() ?>" value="<?= $comments->honeypotValue() ?>">
 			</div>
@@ -56,10 +56,10 @@ $status = $comments->process();
 
 			<input type="hidden" name="<?= $comments->sessionIdName() ?>" value="<?= $comments->sessionId() ?>">
 
-			<!-- <input type="submit" name="<?= $comments->previewName() ?>" value="Preview"> -->
-			<?php //if ($comments->isValidPreview()): ?>
-			<input id="comments-submit" type="submit" name="<?= $comments->submitName() ?>" value="Submit">
-			<?php //endif ?>
+			<input type="submit" name="<?= $comments->previewName() ?>" value="Preview Comment">
+			<?php if ($comments->isValidPreview()) : ?>
+			<input id="comments-submit" type="submit" name="<?= $comments->submitName() ?>" value="Post Comment">
+			<?php endif ?>
 		</form>
 	<?php endif ?>
 </div>

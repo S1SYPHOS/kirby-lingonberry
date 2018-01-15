@@ -9,11 +9,14 @@ Lingonberry Settings
 */
 
 // Kirby-specific
-c::set('markdown.extra', false);
+c::set('markdown.extra', true);
 
 // Theme-specific
 c::set('lingonberry.comments-enabled', true);
 c::set('lingonberry.upload-quality', 85);
+
+// Plugin-specific
+c::set('comments.form.message.smartypants', false);
 
 /*
 
@@ -24,27 +27,29 @@ Routes
 */
 
 // Omitting the home folder in URLs
-// c::set('routes', array(
-//   array(
-//     'pattern' => '(:any)',
-//     'action'  => function($uid) {
-//
-//       $page = page($uid);
-//
-//       if(!$page) $page = page('home/' . $uid);
-//       if(!$page) $page = site()->errorPage();
-//
-//       return site()->visit($page);
-//
-//     }
-//   ),
-//   array(
-//     'pattern' => 'home/(:any)',
-//     'action'  => function($uid) {
-//       go($uid);
-//     }
-//   )
-// ));
+if (!c::get('lingonberry.comments-enabled')) {
+  c::set('routes', array(
+    array(
+      'pattern' => '(:any)',
+      'action'  => function($uid) {
+
+        $page = page($uid);
+
+        if(!$page) $page = page('home/' . $uid);
+        if(!$page) $page = site()->errorPage();
+
+        return site()->visit($page);
+
+      }
+    ),
+    array(
+      'pattern' => 'home/(:any)',
+      'action'  => function($uid) {
+        go($uid);
+      }
+    )
+  ));
+}
 
 
 /*

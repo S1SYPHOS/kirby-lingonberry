@@ -35,7 +35,6 @@ easy to customise available query variables.
     /* author, category, tag, year */
     foreach($types as $type) {
       $type = substr($type, 0, -4);
-      echo $type;
       if(param($type)) { snippet('home/' . $type); }
     }
   }
