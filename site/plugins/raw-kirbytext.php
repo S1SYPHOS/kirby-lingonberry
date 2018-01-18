@@ -1,10 +1,18 @@
 <?php
 
-$query = get('s');
-
 /*
- * Generating Markdown-formatted text without enclosing <p> tags
- */
+
+---------------------------------------
+Custom kirbytext() field method
+---------------------------------------
+
+This field method generates Markdown-formatted text without being enclosed
+by <p> tags - see https://github.com/jbeyerstedt/kirby-plugin-kirbytextRaw
+
+By Jannik Beyerstedt
+GNU General Public License v3.0
+
+*/
 
 function ktRaw($content) {
   $text = kirbytext($content);
