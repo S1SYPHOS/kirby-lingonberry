@@ -1,6 +1,16 @@
 <?php
 
-// image tag
+/*
+
+---------------------------------------
+Custom image kirbytag
+---------------------------------------
+
+This plugin modifies Kirby's standard image kirbytag in order to comply
+with the Wordpress-generated code of the original theme.
+
+*/
+
 kirbytext::$tags['image'] = array(
   'attr' => array(
     'width',

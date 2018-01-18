@@ -1,9 +1,21 @@
 <?php
 
-return function($site, $pages, $page) {
+/*
 
-  // Max number of posts shown per page
-  // $perpage  = $page->perpage()->int();
+---------------------------------------
+Archive controller
+---------------------------------------
+
+This controller defines all variables used by the archive template:
+Each sorting option ('latest', 'by contributor / category / tag') requires
+the corresponding posts.
+
+Instead of querying the pre-defined categories, the archive will only list
+those really used by published blog posts.
+
+*/
+
+return function($site, $pages, $page) {
 
   $posts = page('home')->children()
                        ->visible()
@@ -11,13 +23,12 @@ return function($site, $pages, $page) {
 
   // Latest posts
   $archiveLatest = $posts->limit(30);
-                         // ->paginate(($perpage >= 1)? $perpage : 5);
 
   // Contributors
   $contributors = $site->users();
 
   // Categories
-  $categories = $site->index()->pluck('category', ',', true);
+  $categories = $posts->pluck('category', ',', true);
 
   // Tags
   $tags = $posts->pluck('tags', ',', true);
@@ -26,7 +37,6 @@ return function($site, $pages, $page) {
   return [
     'posts' => $posts,
     'archiveLatest' => $archiveLatest,
-    'pagination' => $archiveLatest->pagination(),
     'contributors' => $contributors,
     'categories' => $categories,
     'tags' => $tags,

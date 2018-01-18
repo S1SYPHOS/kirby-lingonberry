@@ -6,17 +6,14 @@
 Home controller
 ---------------------------------------
 
-This controller defines all variables used by
-the home template: Each view ('search', 'query
-variables' and 'posts') requires a given term,
+This controller defines all variables used by the home template:
+Each view ('search', 'query variables' and 'posts') requires a given term,
 the corresponding posts and their pagination.
 
-The $perpage variable determines how many posts
-should be shown per page.
+The $perpage variable determines how many posts should be shown per page.
 
-The $types array consists of all files inside the
-directory 'site/snippets/home', which makes it quite
-easy to customise available query variables.
+The $types array consists of all files inside the snippet directory
+'home', which makes it quite easy to customise available query variables.
 
 */
 
@@ -27,7 +24,7 @@ return function($site, $pages, $page) {
 
   // All query variables
   $types = dir::read(kirby()->roots()->snippets() . '/home');
-  
+
   // Posts
   $posts = $page->children()
                 ->visible()
