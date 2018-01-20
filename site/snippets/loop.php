@@ -38,6 +38,10 @@ it quite easy to customise available post types.
        <?php snippet('post/formats/' .  $format, $item) ?>
     </div><!-- .post content-inner -->
     <div class="clear"></div>
+    <?php if($format !== 'link') {
+      snippet('post/tags', $item);
+      echo '<div class="clear"></div>';
+    } ?>
     <?php if($page->isChildOf('home')) {
       snippet('post/prevnext', $page);
 

@@ -15,5 +15,3 @@
     </cite></p>
   </blockquote>
 </div><!-- .post-content -->
-<div class="clear"></div>
-<?php snippet('post/tags', $item) ?>

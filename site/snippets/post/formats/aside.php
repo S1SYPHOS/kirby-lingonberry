@@ -12,5 +12,3 @@
 <div class="post-content">
   <?= $item->text()->kt() ?>
 </div><!-- .post-content -->
-<div class="clear"></div>
-<?php snippet('post/tags', $item) ?>

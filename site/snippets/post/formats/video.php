@@ -12,5 +12,3 @@
   <p><?= $item->covervideo() ?></p>
   <?= $item->text()->kt() ?>
 </div><!-- .post-content -->
-<div class="clear"></div>
-<?php snippet('post/tags', $item) ?>
