@@ -64,9 +64,9 @@ it quite easy to customise available post types.
     <div class="content-inner">
       <div class="post-header">
         <h2 class="post-title">
-          <?php if($page->isHomePage()) : ?><a href="<?= $item->url() ?>" rel="bookmark" title="<?= $item->title()->html() ?>"><?php endif ?>
+          <?php e($page->isHomePage(), '<a href="' . $item->url() . '" rel="bookmark" title="' . $item->title()->html() . '">') ?>
             <?= $item->title()->html() ?>
-          <?php if($page->isHomePage()) : ?></a><?php endif ?>
+          <?php e($page->isHomePage(), '</a>') ?>
         </h2>
       </div><!-- .post-header -->
       <div class="post-content">
