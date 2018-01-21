@@ -21,25 +21,21 @@ easy to customise available query variables.
 
 ?>
 
-<?php if($query) {
-  /* search results */
-  snippet('home/search');
-} elseif ($params) {
-  if($year && $month && $day) {
-    /* day */
-    snippet('home/day');
-  } elseif ($year && $month) {
-    /* month */
-    snippet('home/month');
-  } else {
-    /* author, category, tag, year */
-    foreach($types as $type) {
-      $type = substr($type, 0, -4);
-      if(param($type)) { snippet('home/' . $type); }
+<?php
+  if($query) { /* search results */
+    snippet('home/search');
+  } elseif ($params == 1 && !param('page') || $params > 1) {
+    if($year && $month && $day) {
+      snippet('home/day'); /* day */
+    } elseif ($year && $month) {
+      snippet('home/month'); /* month */
+    } else {
+      foreach($types as $type) { /* author, category, tag, year */
+        $type = substr($type, 0, -4);
+        if (param($type)) { snippet('home/' . $type); }
+      }
     }
-  }
-} else {
-  snippet('home/posts');
-} ?>
+  } else { snippet('home/posts'); }
+?>
 
 <?php snippet('footer') ?>
