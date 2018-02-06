@@ -23,4 +23,4 @@
     <?php endforeach ?>
 
   </channel>
-</rss>
+</rss> 
