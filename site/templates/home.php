@@ -24,7 +24,7 @@ easy to customise available query variables.
 <?php
   if($query) { /* search results */
     snippet('home/search');
-  } elseif ($params == 1 && !param('page') || $params > 1) {
+  } elseif (count($params) == 1 && !param('page') || count($params) > 1) {
     if($year && $month && $day) {
       snippet('home/day'); /* day */
     } elseif ($year && $month) {
