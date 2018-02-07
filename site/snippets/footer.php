@@ -22,6 +22,10 @@
             <div class="clear"></div>
           </div><!-- .widget -->
           <div class="clear"></div>
+      <?php if(empty($categories) or empty($tags)): ?> <!-- if categories or tags are empty, move widget -->
+       </div><!-- .widgets -->
+       <div class="widgets">
+      <?php endif ?>
           <div class="widget">
             <div class="widget-content">
               <h3 class="widget-title">About <?= $site->title()->html() ?></h3>
@@ -31,6 +35,7 @@
           </div><!-- .widget -->
           <div class="clear"></div>
         </div><!-- .widgets -->
+       <?php if(!empty($categories)): ?> <!-- if categories are empty, don't display widget -->
         <div class="widgets">
           <div class="widget">
             <div class="widget-content">
@@ -46,6 +51,8 @@
           </div><!-- .widget -->
           <div class="clear"></div>
         </div><!-- .widgets -->
+       <?php endif ?> <!-- end of widget empty-check -->
+       <?php if(!empty($tags)): ?>  <!-- if tags are empty, don't display widget -->
         <div class="widgets">
           <div class="widget widget_tag_cloud">
             <div class="widget-content">
@@ -61,6 +68,7 @@
           </div><!-- .widget -->
           <div class="clear"></div>
         </div><!-- .widgets -->
+        <?php endif ?> <!-- end of widget empty-check -->
         <div class="clear"></div>
       </div><!-- .footer-inner -->
     </div><!-- .footer -->
