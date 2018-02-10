@@ -88,7 +88,7 @@ return function($site, $pages, $page) {
                   ->paginate(($perpage >= 1)? $perpage : 5);
 
   return [
-    'params'               => params(),
+    'params'               => count(params()),
     'types'                => $types,
 
     'posts'                => $posts,
