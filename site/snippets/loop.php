@@ -36,21 +36,18 @@ it quite easy to customise available post types.
     <?php snippet('post/bubble', $item) ?>
     <div class="content-inner">
        <?php snippet('post/formats/' .  $format, $item) ?>
+       <div class="clear"></div>
+       <?php if($format !== 'link') {
+         snippet('post/tags', $item);
+         echo '<div class="clear"></div>';
+       } ?>
     </div><!-- .post content-inner -->
     <div class="clear"></div>
-    <?php if($format !== 'link') {
-      snippet('post/tags', $item);
-      echo '<div class="clear"></div>';
-    } ?>
     <?php if($page->isChildOf('home')) {
       snippet('post/prevnext', $page);
 
       if(c::get('lingonberry.comments')) {
-        if(c::get('lingonberry.comments.nested')) {
-          snippet('post/comments/nested');
-        } else {
-          snippet('post/comments/normal');
-        }
+        snippet('post/comments/comments');
       }
     } ?>
   </div><!-- .post -->

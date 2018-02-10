@@ -7,7 +7,7 @@ Lingonberry Settings
 ---------------------------------------
 
 */
-
+c::set('debug', true);
 // Kirby-specific
 c::set('markdown.extra', true);
 
@@ -15,6 +15,8 @@ c::set('markdown.extra', true);
 c::set('lingonberry.comments', false);
 c::set('lingonberry.comments.nested', false);
 c::set('lingonberry.comments.preview', false);
+c::set('lingonberry.comments.enable-gravatar', true);
+c::set('lingonberry.comments.fallback-avatar', null);
 c::set('lingonberry.upload-quality', 85);
 
 // Plugin-specific

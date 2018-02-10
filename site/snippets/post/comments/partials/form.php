@@ -1,19 +1,6 @@
 <?php
-
-/*
- * This is the example comments form snippet. Feel free to use this code as a
- * reference for creating your own, custom comments snippet.
- *
- * Custom snippet markup guide:
- * <https://github.com/Addpixel/KirbyComments#custom-markup>
- *
- * API documentation:
- * <https://github.com/Addpixel/KirbyComments#api-documentation>
- */
-
-$comments = $page->comments();
-$status = $comments->process();
-
+  $comments = $page->comments();
+  $status = $comments->process();
 ?>
 
 <div id="respond" class="comment-respond">
@@ -21,12 +8,7 @@ $status = $comments->process();
   <p class="thank-you">Thank you for your comment!</p>
   <?php else : ?>
   <h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
-
-  <?php if ($status->isUserError()) : ?>
-  <p id="comment-<?= $comments->nextCommentId() ?>" class="error">
-    <?= $status->getMessage() ?>
-  </p>
-  <?php endif ?>
+  <?php e($status->isUserError(), '<p id="comment-' . $comments->nextCommentId() . '" class="error">' . $status->getMessage() . '</p>') ?>
 
   <?php e(!c::get('lingonberry.comments.nested'), '<form id="commentform" class="comment-form" action="#comment-' . $comments->nextCommentId() . '" method="post" accept-charset="utf-8" role="form" aria-labelledby="comments-form-headline">') ?>
   <p class="comment-notes">Your email address will not be published.</p>
@@ -48,22 +30,16 @@ $status = $comments->process();
     <label for="url">Website</label>
   </p>
 
-  <?php if ($comments->isUsingHoneypot()) : ?>
-  <div style="display: none" hidden>
-    <input type="text" name="<?= $comments->honeypotName() ?>" value="<?= $comments->honeypotValue() ?>">
-  </div>
-  <?php endif ?>
+  <?php e($comments->isUsingHoneypot(), '<div style="display: none" hidden><input type="text" name="' . $comments->honeypotName() . '" value="' . $comments->honeypotValue() . '"></div>') ?>
 
   <input type="hidden" name="<?= $comments->sessionIdName() ?>" value="<?= $comments->sessionId() ?>">
 
-  <?php if (c::get('lingonberry.comments.preview')) : ?>
-  <input type="submit" name="<?= $comments->previewName() ?>" value="Preview Comment">
-  <?php if ($comments->isValidPreview()) : ?>
-  <input id="comments-submit" type="submit" name="<?= $comments->submitName() ?>" value="Post Comment">
-  <?php endif ?>
-  <?php else : ?>
-  <input id="comments-submit" type="submit" name="<?= $comments->submitName() ?>" value="Post Comment">
-  <?php endif ?>
+  <?php if (c::get('lingonberry.comments.preview')) {
+    echo '<input type="submit" name="' . $comments->previewName() . '" value="Preview Comment">';
+    e($comments->isValidPreview(), '<input id="comments-submit" type="submit" name="' . $comments->submitName() . '" value="Post Comment">');
+  } else {
+    echo '<input id="comments-submit" type="submit" name="' . $comments->submitName() . '" value="Post Comment">';
+  } ?>
 
   <?php e(!c::get('lingonberry.comments.nested'), '</form>') ?>
   <?php endif ?>
